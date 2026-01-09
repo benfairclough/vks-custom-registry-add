@@ -16,4 +16,4 @@ Key parts are the array -name: osConfiguration and then the below snippet
               - caCert:
                   secretRef:
                     key: additional-ca-1
-                    name: clustera-user-trusted-ca-secret
+                    name: VKS-CLUSTER-trusted-ca-secret
