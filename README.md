@@ -4,7 +4,7 @@ You will need the cert in its raw base64 encoded form, you then need to double b
 Example.
 
 From a terminal with base64 installed:
-base64 my-cert-a.crt | base64
+base64 my-cert-1.crt | base64
 
 
 When creating the VKS cluster call the secret in the VKS YAML  - Sample below:
