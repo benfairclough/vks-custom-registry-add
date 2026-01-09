@@ -1,5 +1,12 @@
 Perform this before building the VKS cluster:
 
+You will need the cert in its raw base64 encoded form, you then need to double base64 encode it:
+Example.
+
+From a terminal with base64 installed:
+base64 my-cert-a.crt | base64
+
+
 When creating the VKS cluster call the secret in the VKS YAML  - Sample below:
 
 Key parts are the array -name: osConfiguration and then the below snippet
@@ -15,5 +22,5 @@ Key parts are the array -name: osConfiguration and then the below snippet
             additionalTrustedCAs:
               - caCert:
                   secretRef:
-                    key: additional-ca-1
+                    key: my-cert-1
                     name: VKS-CLUSTER-trusted-ca-secret
